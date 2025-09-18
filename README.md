@@ -14,3 +14,18 @@ Para compilar o código, execute o seguinte comando no terminal na raiz do proje
 
 ```bash
 javac eachare/src/main/java/eachare/*.java
+```
+
+## Execução
+
+O programa deve ser iniciado no terminal utilizando o comando:
+
+java eachare.Main <endereço:porta> <vizinhos.txt> <diretorio_compartilhado>
+
+- <endereço:porta>: indica o endereço e a porta do peer atual.  
+- <vizinhos.txt>: arquivo contendo os peers vizinhos (endereço:porta) que o peer conhece.  
+- <diretorio_compartilhado>: diretório onde os arquivos compartilhados serão armazenados.
+
+Exemplo:
+
+java eachare.Main 127.0.0.1:5000 vizinhos.txt shared_files
